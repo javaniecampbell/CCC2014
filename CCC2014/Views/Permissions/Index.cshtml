@@ -1,0 +1,27 @@
+﻿@model String[]
+@{
+    ViewBag.Title = "Index";
+}
+@if (TempData["failure"] != null)
+{
+    <div class="notification info">@TempData["failure"].ToString()</div>
+}
+@Html.ActionLink("Add Permission", "Create")
+<h2>Index</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Role</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var role in Model)
+    {
+        <tr>
+            <td>@role</td>
+            <td class="btn">Delete</td>
+        </tr>        
+    }
+    </tbody>
+</table>

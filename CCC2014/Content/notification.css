@@ -1,0 +1,35 @@
+.notification{
+    border-width: 1px;
+    border-style: solid;
+    padding: 17px 17px 17px 55px;
+    margin-bottom: 15px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.notification.close{
+    background: url("../Images/notifications/close.png") no-repeat scroll 0 0 transparent;
+}
+.notification.success{
+background:#effeb9 url("../Images/notifications/success_24.png") no-repeat 10px 10px;
+border-color: #98c700;
+}
+.notification.errors{
+background:#fccac3 url("../Images/notifications/error_24.png") no-repeat 10px 10px;
+border-color: #ea5338;
+}
+.notification.warnings{
+background:#ffeaa7 url("../Images/notifications/warning_32.png") no-repeat 10px 10px;
+border-color: #f9b418;
+}
+.notification.info{
+background:#d1e4f3 url("../Images/notifications/info_24.png") no-repeat 10px 10px;
+border-color: #4d8fcc;
+}
+.notification.tips{
+background:#feeac9 url("../Images/notifications/tip_22.png") no-repeat 10px 10px;
+border-color: #d38e49;
+}
+.strong{
+    font-weight: bold;
+}

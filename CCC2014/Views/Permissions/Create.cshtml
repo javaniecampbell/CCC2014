@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Add Permissions</h2>
+
+@using(Html.BeginForm()){
+ 
+    @Html.Label("Permission", new { @for = "permission"})
+    @Html.TextBox("permission")
+      
+    <input type="submit" value="Add Permission" />
+}
+@if (TempData["failure"] != null)
+{
+    <div class="notification info">@TempData["failure"].ToString()</div>
+}
