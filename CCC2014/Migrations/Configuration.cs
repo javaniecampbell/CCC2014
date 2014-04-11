@@ -52,7 +52,7 @@ namespace CCC2014.Migrations
 
             #region Users
             if (!WebSecurity.UserExists("mjavacam"))
-                WebSecurity.CreateUserAndAccount("mjavacam", "password");
+                WebSecurity.CreateUserAndAccount("mjavacam", "n@turekil1");
             if (!Roles.GetRolesForUser("mjavacam").Contains("Administrator"))
                 Roles.AddUsersToRoles(new[] { "mjavacam" }, new[] { "Administrator" });
             #endregion
