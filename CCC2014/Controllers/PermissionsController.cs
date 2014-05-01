@@ -11,7 +11,7 @@ using WebMatrix.WebData;
 namespace CCC2014.Controllers
 {
     [InitializeSimpleMembership]
-    [Authorize(Roles = "Administrator")]
+    //[Authorize(Roles = "Administrator")]
     public class PermissionsController : Controller
     {
         //
