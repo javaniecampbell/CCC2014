@@ -72,10 +72,12 @@ namespace CCC2014.Controllers
                 // TODO: Add insert logic here
                 if (!Roles.RoleExists(permission))
                 {
+                    TempData["success"] = "Ensure it does not exist before trying again.";
                     Roles.CreateRole(permission);
+                }else{
+                    TempData["failure"] = "Ensure it does not exist before trying again.";
+                   // TempData["failure"] = permission;
                 }
-                TempData["failure"] = "Ensure it does not exist before trying again.";
-               // TempData["failure"] = permission;
                 return RedirectToAction("Index");
             }
             catch
